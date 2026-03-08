@@ -1,0 +1,40 @@
+# Python bytecode (anywhere)
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/*.python-version
+
+# Virtual environments (anywhere)
+**/.venv/
+**/venv/
+**/env/
+**/ENV/
+**/Scripts/
+
+# Temp files from editor/IDE
+**/*.swp
+**/*.swo
+**/*.sublime-workspace
+**/*.sublime-project
+**/.vscode/
+
+# pytest cache
+**/.pytest_cache/
+
+# Logs and temporary parser files
+**/logs.txt
+
+# Python packaging files
+**/*.egg-info/
+**/*.egg
+**/dist/
+**/build/
+**/*.lock
+**/pyvenv.cfg
+
+# OS-specific files
+**/.DS_Store
+**/Thumbs.db
+
+# Pipenv / Poetry locks (optional)
+**/poetry.lock
