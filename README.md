@@ -5,4 +5,4 @@ Just a place where the things I build using Python end up living.
 
 ### Projects
 
-- LogAnalyzerCLI — Built this after getting tired of digging through large log files trying to find errors or patterns manually. This parses logs and gives quick summaries so it's easier to see what's going on.
+- LogAnalyzerCLI - Built this after getting tired of digging through large log files trying to find errors or patterns manually. This parses logs and gives quick summaries so it's easier to see what's going on.
