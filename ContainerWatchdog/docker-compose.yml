@@ -1,0 +1,21 @@
+services:
+  docker-notifier:
+    build: .
+    image: adityagarasangi0/container-watchdog:1.1
+    container_name: The-Watchdog
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    group_add:
+      - "${DOCKER_GID:-1001}"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:size=8m
